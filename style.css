@@ -8,6 +8,8 @@
 body {
     background: #081b29;
     color: #ededed;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
@@ -17,7 +19,6 @@ body {
     width: 100%;
     padding: 20px 10%;
     background-color: #081b29;
-    /* background: transparent; */
     display: flex;
     justify-content: space-between;
     align-items: center;
