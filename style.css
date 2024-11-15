@@ -5,6 +5,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    width: 100vw;
+    height: fit-content;
+}
+
 body {
     background: #081b29;
     color: #ededed;
@@ -13,7 +18,7 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -147,7 +152,7 @@ body {
 }
 
 .home {
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -724,10 +729,10 @@ input::placeholder, textarea::placeholder{
     }
     to{
         opacity: 1;
-        /* scale: 1; */
         clip-path: inset(0 0 0 0);
     }
 }
+
 .about-header, .about-content {
     animation: right linear;
     animation-timeline: view();
@@ -745,6 +750,27 @@ input::placeholder, textarea::placeholder{
 
 /* Resposive screen */
  @media (max-width:768px) {
+
+    .header{
+        padding: 10px 20px;
+    }
+
+    .home-content h1{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    
+    .home-content h3{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .home-content-image img{
+        width: 300px;
+    }
+
+    .home-sci{
+        display: none;
+    }
     .home {
         flex-direction: column;
         margin-top: 6rem;
@@ -770,16 +796,31 @@ input::placeholder, textarea::placeholder{
         height: auto;
     }
 
+    .about-header{
+        margin-bottom: 20px;
+    }
+
     .about-content {
         flex-direction: column;
         text-align: center;
         flex-wrap: wrap;
     }
-    .about-content img {
-        margin-left: 20vw;
+    .about-image {
+        margin: auto;
     }
     .about-content p{
         font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .about-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-header, .about-content {
+        animation: none;
     }
 
     .contact-container {
@@ -787,7 +828,7 @@ input::placeholder, textarea::placeholder{
     }
 
     .contact-container img {
-        width: 400px;
+        width: 250px;
     }
 
     .contact-container .contact-form {
@@ -796,23 +837,46 @@ input::placeholder, textarea::placeholder{
         align-items: center;
     }
 
+    .contact-form{
+        margin-left: 0;
+    }
+
     .contact-form .form-input {
-        width: 400px;
+        width: 300px;
     }
 
     .contact-form button{
         width: 150px;
+        margin-left: 0;
     }
     .education-experience-links {
         display: flex;
         justify-content: center;
-        margin-left: 4rem;
+        margin-left: 2rem;
     }
 
     .education-experience-links a{
         margin: .5rem;
         padding: 1rem .5rem;
     }  
+
+    .education-item{
+        margin: 30px 0px;
+        padding-left: 50px;
+    }
+
+    .education-item img{
+        margin-left: 0;
+    }
+
+    .degree-info h3{
+        font-size: 20px;
+    }
+
+    .degree-info p{
+        font-size: 14px;
+        text-align: start;
+    }
 }
 
 @media (max-width:1024px) {
