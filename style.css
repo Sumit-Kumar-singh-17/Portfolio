@@ -746,7 +746,11 @@ input::placeholder, textarea::placeholder{
 }
 
 
+
+/* Responsive Screen 1024px */
 @media (max-width:1024px) {
+
+    /* About Responsive */
     .about-content {
         display: flex;
         flex-direction: column;
@@ -762,19 +766,24 @@ input::placeholder, textarea::placeholder{
         justify-content: center;
     }
 
+
+    /* Contact Button Responsive */
     .contact-form button {
         margin-left: 90px;
     }
 
 } 
 
-/* Resposive screen */
+/* Resposive screen 768*/
  @media (max-width:768px) {
 
+    /* Header Responsive  */
     .header{
         padding: 10px 20px;
     }
 
+
+    /* Home Resposive */
     .home-content h1{
         font-size: 30px;
         /* padding-left: 20px; */
@@ -813,6 +822,8 @@ input::placeholder, textarea::placeholder{
         gap: 20px;
     }
 
+
+    /* Project Section responsive */
     #project {
         margin-top: 124px;
     }
@@ -835,6 +846,8 @@ input::placeholder, textarea::placeholder{
         height: auto;
     }
 
+
+    /* About Section Responsive */
     .about-header{
         margin-bottom: 20px;
     }
@@ -863,35 +876,6 @@ input::placeholder, textarea::placeholder{
         animation: none;
     }
 
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-container img {
-        width: 250px;
-        margin-left: 0;
-    }
-
-    .contact-container .contact-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-form{
-        margin-left: 0;
-        padding-bottom: 60px;
-    }
-
-    .contact-form .form-input {
-        width: 300px;
-    }
-
-    .contact-form button{
-        width: 150px;
-        margin-left: 0;
-    }
     .education-experience-links {
         display: flex;
         justify-content: center;
@@ -922,6 +906,40 @@ input::placeholder, textarea::placeholder{
         text-align: start;
     }
 
+
+    /* Contact section Responsive */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container img {
+        width: 250px;
+        margin-left: 0;
+    }
+
+    .contact-container .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form{
+        margin-left: 0;
+        padding-bottom: 60px;
+    }
+
+    .contact-form .form-input {
+        width: 300px;
+    }
+
+    .contact-form button{
+        width: 150px;
+        margin-left: 0;
+    }
+    
+
+    /*  Responsive All section Animation */
     #about, #project, #contact {
         animation-range: entry 0% cover 25%;
     }
