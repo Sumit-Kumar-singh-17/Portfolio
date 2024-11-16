@@ -739,10 +739,16 @@ input::placeholder, textarea::placeholder{
     animation-range: entry 0% cover 40%;
 }
 
-#contact {
+.contact-container img, .contact-form input{
     animation: left linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.contact-form textarea {
+    animation: left linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 
