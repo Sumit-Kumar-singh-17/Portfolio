@@ -901,11 +901,13 @@ input::placeholder, textarea::placeholder{
 
     .degree-info h3{
         font-size: 20px;
+        text-align: start;
     }
 
     .degree-info p{
         font-size: 14px;
         text-align: start;
+        padding-left: 16px;
     }
 
 
