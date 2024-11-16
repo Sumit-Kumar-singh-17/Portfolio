@@ -152,7 +152,7 @@ body {
 }
 
 .home {
-    height: 110vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -404,7 +404,7 @@ body {
 .project-item video{
     max-width: 26vw;
     height: 20vw;
-    margin-left: .3rem;
+    /* margin-left: .3rem; */
                     
 }
             
@@ -746,7 +746,23 @@ input::placeholder, textarea::placeholder{
 }
 
 
+@media (max-width:1024px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .education-experience-links {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-form button {
+        margin-left: 90px;
+    }
+
+} 
 
 /* Resposive screen */
  @media (max-width:768px) {
@@ -757,29 +773,48 @@ input::placeholder, textarea::placeholder{
 
     .home-content h1{
         font-size: 30px;
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
     
     .home-content h3{
         font-size: 20px;
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
     .home-content-image img{
         width: 300px;
+        margin-top: 3rem;
     }
 
     .home-sci{
-        display: none;
+        /* display: none; */
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        position: unset;
+        margin-top: 15px;
     }
     .home {
         flex-direction: column;
         margin-top: 6rem;
+        width: 100%;
+        height: 100vh;
     }
     .home-sci {
         bottom: 7rem;
     }
+
+    .home-content .btn-box {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #project {
+        margin-top: 124px;
+    }
+
     .projects-container {
-        margin-top: 350px;
+        margin-top: 0px;
         
     }
     .project-items {
@@ -810,7 +845,8 @@ input::placeholder, textarea::placeholder{
     }
     .about-content p{
         font-size: 1rem;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-left: 0;
     }
 
     .about-header{
@@ -852,7 +888,8 @@ input::placeholder, textarea::placeholder{
     .education-experience-links {
         display: flex;
         justify-content: center;
-        margin-left: 2rem;
+        /* margin-left: 2rem; */
+        width: 100%;
     }
 
     .education-experience-links a{
@@ -877,12 +914,9 @@ input::placeholder, textarea::placeholder{
         font-size: 14px;
         text-align: start;
     }
+
+    #about, #project, #contact {
+        animation-range: entry 0% cover 25%;
+    }
 }
 
-@media (max-width:1024px) {
-    .about-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-} 
