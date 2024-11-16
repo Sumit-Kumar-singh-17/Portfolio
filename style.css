@@ -792,12 +792,10 @@ input::placeholder, textarea::placeholder{
     /* Home Resposive */
     .home-content h1{
         font-size: 30px;
-        /* padding-left: 20px; */
     }
     
     .home-content h3{
         font-size: 20px;
-        /* padding-left: 20px; */
     }
     .home-content-image img{
         width: 300px;
@@ -805,7 +803,6 @@ input::placeholder, textarea::placeholder{
     }
 
     .home-sci{
-        /* display: none; */
         width: 100%;
         justify-content: center;
         gap: 20px;
@@ -880,14 +877,15 @@ input::placeholder, textarea::placeholder{
         flex-direction: column;
         justify-content: center;
     }
-    .about-header, .about-content {
-        animation: none;
+    .about-header, .about-content img, .about-details p, div{
+        animation: right linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
     }
 
     .education-experience-links {
         display: flex;
         justify-content: center;
-        /* margin-left: 2rem; */
         width: 100%;
     }
 
