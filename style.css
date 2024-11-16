@@ -859,6 +859,8 @@ input::placeholder, textarea::placeholder{
     }
     .about-image {
         margin: auto;
+        width: 324px;
+        height: 324px;
     }
     .about-content p{
         font-size: 1rem;
