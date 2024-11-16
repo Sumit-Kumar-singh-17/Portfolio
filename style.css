@@ -402,10 +402,7 @@ body {
 }
             
 .project-item video{
-    max-width: 26vw;
-    height: 20vw;
-    /* margin-left: .3rem; */
-                    
+    max-width: 100%;        
 }
             
 .project-item h3{
